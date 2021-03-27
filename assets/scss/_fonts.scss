@@ -1,0 +1,103 @@
+@font-face {
+  font-family: $sf-h;
+  src: url("../fonts/SF-Heavy/sf-pro-display-heavy.woff2") format("woff2"),
+    url("../fonts/SF-Heavy/sf-pro-display-heavy.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: $sf-m;
+  src: url("../fonts/SF-Medium/sf-pro-display-medium.woff2") format("woff2"),
+    url("../fonts/SF-Medium/sf-pro-display-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: $sf-l;
+  src: url("../fonts/SF-Light/sf-pro-display-light.woff2") format("woff2"),
+    url("../fonts/SF-Light/sf-pro-display-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: $sf-b;
+  src: url("../fonts/SF-Bold/sf-pro-display-bold.woff2") format("woff2"),
+    url("../fonts/SF-Bold/sf-pro-display-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: $sf-sb;
+  src: url("../fonts/SF-Semibold/sf-pro-display-semibold.woff2") format("woff2"),
+    url("../fonts/SF-Semibold/sf-pro-display-semibold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: $sf-black;
+  src: url("../fonts/SF-Black/sf-pro-display-black.woff2") format("woff2"),
+    url("../fonts/SF-Black/sf-pro-display-black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: $poppins;
+  src: url('../fonts/Poppins/poppins-regular.woff2') format('woff2'),
+       url('../fonts/Poppins/poppins-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: $dm-sans;
+  src: url('../fonts/DM-Sans/dm_sans_regular_400.woff2') format('woff2'),
+       url('../fonts/DM-Sans/dm_sans_regular_400.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: $i-b;
+  src: url("../fonts/Inter-Bold/inter-bold.woff2") format("woff2"),
+    url("../fonts/Inter-Bold/inter-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: $i-m;
+  src: url("../fonts/Inter-Medium/inter-medium.woff2") format("woff2"),
+    url("../fonts/Inter-Medium/inter-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sf-black {
+  font-family: $sf-black;
+}
+.sf-b {
+  font-family: $sf-b;
+}
+.sf-sb {
+  font-family: $sf-sb;
+}
+.sf-l {
+  font-family: $sf-l;
+}
+.sf-h {
+  font-family: $sf-h;
+}
+.sf-m {
+  font-family: $sf-m;
+}
+.poppins{
+  font-family: $poppins;
+}
+.dm-sans{
+  font-family:$dm-sans;
+}
+.i-b{
+  font-family:$i-b;
+}
+.i-m{
+  font-family:$i-m;
+}
