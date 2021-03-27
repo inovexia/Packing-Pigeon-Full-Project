@@ -41,11 +41,20 @@
   font-style: normal;
 }
 @font-face {
-  font-family: $i-m;
-  src: url("../fonts/Inter-Medium/inter-medium.woff2") format("woff2"),
-    url("../fonts/Inter-Medium/inter-medium.woff") format("woff");
+  font-family: $poppins;
+  src: url('../fonts/Poppins/poppins-regular.woff2') format('woff2'),
+       url('../fonts/Poppins/poppins-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+
+}
+@font-face {
+  font-family: $dm-sans;
+  src: url('../fonts/DM-Sans/dm_sans_regular_400.woff2') format('woff2'),
+       url('../fonts/DM-Sans/dm_sans_regular_400.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 @font-face {
   font-family: $i-b;
@@ -55,41 +64,13 @@
   font-style: normal;
 }
 @font-face {
-  font-family: $i-eb;
-  src: url("../fonts/Inter-Ebold/inter-extrabold.woff2") format("woff2"),
-    url("../fonts/Inter-Ebold/inter-extrabold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: $i-l;
-  src: url("../fonts/Inter-Light/inter-light-beta.woff2") format("woff2"),
-    url("../fonts/Inter-Light/inter-light-beta.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: $i-sb;
-  src: url("../fonts/Inter-SBold/inter-semibold.woff2") format("woff2"),
-    url("../fonts/Inter-SBold/inter-semibold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-.i-m {
   font-family: $i-m;
+  src: url("../fonts/Inter-Medium/inter-medium.woff2") format("woff2"),
+    url("../fonts/Inter-Medium/inter-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-.i-b {
-  font-family: $i-b;
-}
-.i-eb {
-  font-family: $i-eb;
-}
-.i-sb {
-  font-family: $i-sb;
-}
-.i-l {
-  font-family: $i-l;
-}
+
 .sf-black {
   font-family: $sf-black;
 }
@@ -107,4 +88,16 @@
 }
 .sf-m {
   font-family: $sf-m;
+}
+.poppins{
+  font-family: $poppins;
+}
+.dm-sans{
+  font-family:$dm-sans;
+}
+.i-b{
+  font-family:$i-b;
+}
+.i-m{
+  font-family:$i-m;
 }
