@@ -15518,13 +15518,17 @@ button.swiper-pagination-bullet {
     font-weight: 600;
     line-height: 26px;
   }
+  footer .container-fluid .footer .top-part .row .col .right-part .lang, footer .container-sm .footer .top-part .row .col .right-part .lang, footer .container-md .footer .top-part .row .col .right-part .lang, footer .container-lg .footer .top-part .row .col .right-part .lang, footer .container-xl .footer .top-part .row .col .right-part .lang {
+    justify-content: end;
+    align-items: center;
+  }
   footer .container-fluid .footer .top-part .row .col .right-part .lang p, footer .container-sm .footer .top-part .row .col .right-part .lang p, footer .container-md .footer .top-part .row .col .right-part .lang p, footer .container-lg .footer .top-part .row .col .right-part .lang p, footer .container-xl .footer .top-part .row .col .right-part .lang p {
     color: #001D3E;
     font-size: 14px;
     font-family: "POP";
     font-weight: 600;
     line-height: 26px;
-    margin: 0;
+    margin: 0px 0px 0px 20px;
   }
   footer .container-fluid .footer .top-part .row .col .right-part .footer-social-link, footer .container-sm .footer .top-part .row .col .right-part .footer-social-link, footer .container-md .footer .top-part .row .col .right-part .footer-social-link, footer .container-lg .footer .top-part .row .col .right-part .footer-social-link, footer .container-xl .footer .top-part .row .col .right-part .footer-social-link {
     padding-top: 30px;

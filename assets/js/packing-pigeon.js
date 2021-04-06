@@ -28,6 +28,7 @@
     });
     var galleryTop = new Swiper('.video-frame', {
       spaceBetween:0,
+      effect: 'fade',
       autoplay: {
         delay: 3000,
       },
