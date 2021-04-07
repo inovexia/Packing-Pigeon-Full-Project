@@ -15641,6 +15641,104 @@ button.swiper-pagination-bullet {
   .labels-category .banner .banner-content .container-fluid .content-area p a:hover, .labels-category .banner .banner-content .container-sm .content-area p a:hover, .labels-category .banner .banner-content .container-md .content-area p a:hover, .labels-category .banner .banner-content .container-lg .content-area p a:hover, .labels-category .banner .banner-content .container-xl .content-area p a:hover {
     opacity: 0.9;
   }
+  .labels-category .tags .container-fluid .tags-inner .row .col a .tag, .labels-category .tags .container-sm .tags-inner .row .col a .tag, .labels-category .tags .container-md .tags-inner .row .col a .tag, .labels-category .tags .container-lg .tags-inner .row .col a .tag, .labels-category .tags .container-xl .tags-inner .row .col a .tag {
+    height: 270px;
+  }
+  .labels-category .durable-stickers {
+    padding: 26px 0px;
+  }
+  .labels-category .durable-stickers .container-fluid .row .title, .labels-category .durable-stickers .container-sm .row .title, .labels-category .durable-stickers .container-md .row .title, .labels-category .durable-stickers .container-lg .row .title, .labels-category .durable-stickers .container-xl .row .title {
+    width: 100%;
+    max-width: 544px;
+  }
+  .labels-category .durable-stickers .container-fluid .row .title h3, .labels-category .durable-stickers .container-sm .row .title h3, .labels-category .durable-stickers .container-md .row .title h3, .labels-category .durable-stickers .container-lg .row .title h3, .labels-category .durable-stickers .container-xl .row .title h3 {
+    font-family: "SF-M";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    color: #364859;
+    margin: 0;
+  }
+  .labels-category .durable-stickers .container-fluid .row .title p, .labels-category .durable-stickers .container-sm .row .title p, .labels-category .durable-stickers .container-md .row .title p, .labels-category .durable-stickers .container-lg .row .title p, .labels-category .durable-stickers .container-xl .row .title p {
+    font-family: "POP";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #304964;
+    margin: 30px 0px 0px;
+  }
+  .labels-category .durable-stickers .container-fluid .sticker-outer, .labels-category .durable-stickers .container-sm .sticker-outer, .labels-category .durable-stickers .container-md .sticker-outer, .labels-category .durable-stickers .container-lg .sticker-outer, .labels-category .durable-stickers .container-xl .sticker-outer {
+    padding-top: 60px;
+  }
+  .labels-category .durable-stickers .container-fluid .sticker-outer .col .content-box .sticker, .labels-category .durable-stickers .container-sm .sticker-outer .col .content-box .sticker, .labels-category .durable-stickers .container-md .sticker-outer .col .content-box .sticker, .labels-category .durable-stickers .container-lg .sticker-outer .col .content-box .sticker, .labels-category .durable-stickers .container-xl .sticker-outer .col .content-box .sticker {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .labels-category .durable-stickers .container-fluid .sticker-outer .col .content-box .sticker img, .labels-category .durable-stickers .container-sm .sticker-outer .col .content-box .sticker img, .labels-category .durable-stickers .container-md .sticker-outer .col .content-box .sticker img, .labels-category .durable-stickers .container-lg .sticker-outer .col .content-box .sticker img, .labels-category .durable-stickers .container-xl .sticker-outer .col .content-box .sticker img {
+    width: 100%;
+    height: auto;
+  }
+  .labels-category .durable-stickers .container-fluid .sticker-outer .col .content-box h5, .labels-category .durable-stickers .container-sm .sticker-outer .col .content-box h5, .labels-category .durable-stickers .container-md .sticker-outer .col .content-box h5, .labels-category .durable-stickers .container-lg .sticker-outer .col .content-box h5, .labels-category .durable-stickers .container-xl .sticker-outer .col .content-box h5 {
+    font-family: "POP";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #364859;
+    margin: 24px 0px;
+  }
+  .labels-category .proof-sticker {
+    padding: 20px 0px 117px;
+  }
+  .labels-category .proof-sticker .container-fluid .row .left-part, .labels-category .proof-sticker .container-sm .row .left-part, .labels-category .proof-sticker .container-md .row .left-part, .labels-category .proof-sticker .container-lg .row .left-part, .labels-category .proof-sticker .container-xl .row .left-part {
+    border-radius: 24px;
+    overflow: hidden;
+  }
+  .labels-category .proof-sticker .container-fluid .row .left-part img, .labels-category .proof-sticker .container-sm .row .left-part img, .labels-category .proof-sticker .container-md .row .left-part img, .labels-category .proof-sticker .container-lg .row .left-part img, .labels-category .proof-sticker .container-xl .row .left-part img {
+    width: 100%;
+    height: auto;
+  }
+  .labels-category .proof-sticker .container-fluid .row .right-part .content, .labels-category .proof-sticker .container-sm .row .right-part .content, .labels-category .proof-sticker .container-md .row .right-part .content, .labels-category .proof-sticker .container-lg .row .right-part .content, .labels-category .proof-sticker .container-xl .row .right-part .content {
+    width: 100%;
+    max-width: 548px;
+  }
+  .labels-category .proof-sticker .container-fluid .row .right-part .content h3, .labels-category .proof-sticker .container-sm .row .right-part .content h3, .labels-category .proof-sticker .container-md .row .right-part .content h3, .labels-category .proof-sticker .container-lg .row .right-part .content h3, .labels-category .proof-sticker .container-xl .row .right-part .content h3 {
+    font-family: "SF-M";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    color: #364859;
+    margin: 0;
+  }
+  .labels-category .proof-sticker .container-fluid .row .right-part .content p, .labels-category .proof-sticker .container-sm .row .right-part .content p, .labels-category .proof-sticker .container-md .row .right-part .content p, .labels-category .proof-sticker .container-lg .row .right-part .content p, .labels-category .proof-sticker .container-xl .row .right-part .content p {
+    font-family: "POP";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #304964;
+    margin: 0;
+    padding-top: 20px;
+  }
+  .labels-category .proof-sticker .container-fluid .row .right-part .sticker-box, .labels-category .proof-sticker .container-sm .row .right-part .sticker-box, .labels-category .proof-sticker .container-md .row .right-part .sticker-box, .labels-category .proof-sticker .container-lg .row .right-part .sticker-box, .labels-category .proof-sticker .container-xl .row .right-part .sticker-box {
+    padding-top: 38px;
+    display: inline-flex;
+    align-items: end;
+  }
+  .labels-category .proof-sticker .container-fluid .row .right-part .sticker-box .sticker, .labels-category .proof-sticker .container-sm .row .right-part .sticker-box .sticker, .labels-category .proof-sticker .container-md .row .right-part .sticker-box .sticker, .labels-category .proof-sticker .container-lg .row .right-part .sticker-box .sticker, .labels-category .proof-sticker .container-xl .row .right-part .sticker-box .sticker {
+    border-radius: 24px;
+    overflow: hidden;
+  }
+  .labels-category .proof-sticker .container-fluid .row .right-part .sticker-box .sticker img, .labels-category .proof-sticker .container-sm .row .right-part .sticker-box .sticker img, .labels-category .proof-sticker .container-md .row .right-part .sticker-box .sticker img, .labels-category .proof-sticker .container-lg .row .right-part .sticker-box .sticker img, .labels-category .proof-sticker .container-xl .row .right-part .sticker-box .sticker img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (min-width: 768px) {
