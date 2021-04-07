@@ -39,7 +39,7 @@
             .nav-item{
               margin:0px 16px;
               a{
-                color:#1D1D3C;
+                color:#364859;
                 font-family: $sf-m;
                 font-size:14px;
                 padding:0px 8px;
@@ -60,7 +60,7 @@
           }
           .signup{
             color:#fff;
-            background-color: #000;
+            background: #B1D3CA;
             font-size:16px;
             font-family:$i-m;
             font-weight:bold;
@@ -98,7 +98,7 @@
               font-size: 38px;
               line-height: 38px;
               font-family: "DM-S";
-              color: #001D3E;
+              color: #364859;
               font-weight: bold;
               letter-spacing: -3px;
               margin:0;
@@ -156,8 +156,9 @@
                 border-radius:30px;
                 transition:ease-in-out 0.3s;
                 &:hover{
-                  background-color: #000000;
-                  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.19);
+                  background-color: #B1D3CA;
+                  // box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.19);
+                  filter: drop-shadow(10px 20px 40px rgba(209,211,202,0.3));
                   h5{
                     color:#fff;
                   }
@@ -170,6 +171,7 @@
                   height: 100px;
                   border-radius: 50%;
                   margin: 47px auto 0px;
+                  box-shadow: 0px 55px 64px rgba(51, 51, 51, 0.123387);
                   .icon-box {
                     display: table-cell;
                     vertical-align: middle;
@@ -232,7 +234,7 @@
               font-size: 48px;
               line-height: 56px;
               letter-spacing: -2px;
-              color: #001D3E;
+              color: #364859;
               margin:0;
             }
             .turnround{
@@ -321,6 +323,7 @@
           .right-part{
             width:100%;
             max-width:540px;
+            display: grid;
             p{
               font-family: $poppins;
               font-weight: normal;
@@ -357,7 +360,7 @@
               line-height:56px;
               font-family:$poppins;
               font-weight:600;
-              color:#001D3E;
+              color:#364859;
               margin-bottom:0;
             }
             p{
@@ -509,8 +512,12 @@
               }
               .right-part{
                 .lang{
+                  display: inline-flex;
                   justify-content: end;
                   align-items: center;
+                  background: linear-gradient(71.35deg, #F0FCFF 0.97%, #FFF8F9 99.07%);
+                  border-radius: 50px;
+                  padding: 7px 22px;
                   p{
                     color:#001D3E;
                     font-size:14px;
@@ -531,6 +538,16 @@
                       margin-right:25px;
                       &:last-child{
                         margin-right:0;
+                        
+                      }
+                      a{
+                        background: #364859;
+                        border-radius:50%;
+                        width:48px;
+                        height:48px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
                       }
                     }
                   }
@@ -574,8 +591,185 @@
                       font-size:14px;
                       font-weight: 600;
                       line-height:26px;
+                      
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .labels-category {
+    .banner {
+      background: linear-gradient(71.35deg, #F0FCFF .97%, #FFF8F9 99.07%);
+      height:412px;
+      .banner-content{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 70px;
+        width: 100%;
+        justify-content:center;
+        align-items: center;
+        .container-fluid{
+          .content-area{
+            width: 100%;
+            max-width: 730px;
+            margin: 0px auto;
+            text-align: center;
+            h1{
+              font-family:"DM-S";
+              font-style: normal;
+              font-weight: bold;
+              font-size: 72px;
+              line-height: 78px;
+              letter-spacing: -3px;
+              color: #364859;
+              margin:0;
+            }
+            p{
+              font-family:$poppins;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 30px;
+              text-align: center;
+              color: #304964;
+              margin:0;
+              padding-top:20px;
+              a{
+                color: #304964;
+                transition:ease-in-out 0.3s;
+                &:hover{
+                  opacity:0.9;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .tags{
+      .container-fluid{
+        .tags-inner{
+          .row{
+            .col{
+              a{
+                .tag{
+                  height:270px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .durable-stickers{
+      padding:26px 0px;
+      .container-fluid{
+        .row{
+          .title{
+            width:100%;
+            max-width:544px;
+            h3{
+              font-family:$sf-m;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 48px;
+              line-height: 56px;
+              letter-spacing: -0.02em;
+              color: #364859;
+              margin:0;
+            }
+            p{
+              font-family:$poppins;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 24px;
+              color: #304964;
+              margin:30px 0px 0px;
+            }
+            
+          }
+        }
+        .sticker-outer{
+          padding-top:60px;
+          .col{
+            .content-box{
+              .sticker{
+                border-radius: 15px;
+                overflow: hidden;
+                img{
+                  width:100%;
+                  height:auto;
+                }
+              }
+              h5{
+                font-family: $poppins;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                text-align: center;
+                color: #364859;
+                margin:24px 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .proof-sticker{
+      padding:20px 0px 117px;
+      .container-fluid{
+        .row{
+          .left-part{
+            border-radius:24px;
+            overflow: hidden;
+            img{
+              width:100%;
+              height:auto;
+            }
+          }
+          .right-part{
+            .content{
+              width:100%;
+              max-width:548px;
+              h3{
+                font-family:$sf-m;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 48px;
+                line-height: 56px;
+                letter-spacing: -0.02em;
+                color: #364859;
+                margin:0;
+              }
+              p{
+                font-family: $poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color: #304964;
+                margin:0;
+                padding-top:20px;
+              }
+            }
+            .sticker-box{
+              padding-top:38px;
+              display:inline-flex;
+              align-items:end;
+              .sticker{
+                border-radius:24px;
+                overflow:hidden;
+                img{
+                  width:100%;
+                height:auto;
                 }
               }
             }
