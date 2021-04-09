@@ -15871,7 +15871,7 @@ button.swiper-pagination-bullet {
     font-family: "DM-S";
     color: #D6D6D6;
     margin-bottom: 0;
-    padding: 23px;
+    padding: 23px 23px 23px 30px;
     font-size: 16px;
     min-height: 67px;
   }
@@ -15910,41 +15910,234 @@ button.swiper-pagination-bullet {
   }
   .checking-form .container-fluid .row .col .form-outer form .size, .checking-form .container-sm .row .col .form-outer form .size, .checking-form .container-md .row .col .form-outer form .size, .checking-form .container-lg .row .col .form-outer form .size, .checking-form .container-xl .row .col .form-outer form .size {
     max-width: 249px;
-    position: relative;
-  }
-  .checking-form .container-fluid .row .col .form-outer form .size::before, .checking-form .container-sm .row .col .form-outer form .size::before, .checking-form .container-md .row .col .form-outer form .size::before, .checking-form .container-lg .row .col .form-outer form .size::before, .checking-form .container-xl .row .col .form-outer form .size::before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    background: url("/assets/img/select.png") no-repeat -30px -50px fixed;
-    top: 10px;
-    position: absolute;
-    top: 0;
+    width: 100%;
   }
   .checking-form .container-fluid .row .col .form-outer form .quantity, .checking-form .container-sm .row .col .form-outer form .quantity, .checking-form .container-md .row .col .form-outer form .quantity, .checking-form .container-lg .row .col .form-outer form .quantity, .checking-form .container-xl .row .col .form-outer form .quantity {
     max-width: 249px;
+    width: 100%;
   }
   .checking-form .container-fluid .row .col .form-outer form .price, .checking-form .container-sm .row .col .form-outer form .price, .checking-form .container-md .row .col .form-outer form .price, .checking-form .container-lg .row .col .form-outer form .price, .checking-form .container-xl .row .col .form-outer form .price {
     max-width: 124px;
+    position: relative;
+  }
+  .checking-form .container-fluid .row .col .form-outer form .price::before, .checking-form .container-sm .row .col .form-outer form .price::before, .checking-form .container-md .row .col .form-outer form .price::before, .checking-form .container-lg .row .col .form-outer form .price::before, .checking-form .container-xl .row .col .form-outer form .price::before {
+    content: "$";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: #D6D6D6;
+    transform: translate(0%, 50%);
+    font-size: 16px;
+    font-family: "DM-S";
   }
   .checking-form .container-fluid .row .col .form-outer form .save, .checking-form .container-sm .row .col .form-outer form .save, .checking-form .container-md .row .col .form-outer form .save, .checking-form .container-lg .row .col .form-outer form .save, .checking-form .container-xl .row .col .form-outer form .save {
     max-width: 100px;
+    position: relative;
+  }
+  .checking-form .container-fluid .row .col .form-outer form .save::before, .checking-form .container-sm .row .col .form-outer form .save::before, .checking-form .container-md .row .col .form-outer form .save::before, .checking-form .container-lg .row .col .form-outer form .save::before, .checking-form .container-xl .row .col .form-outer form .save::before {
+    content: "%";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: #D6D6D6;
+    transform: translate(0%, 50%);
+    font-size: 16px;
+    font-family: "DM-S";
   }
   .checking-form .container-fluid .row .col .form-outer form .submit-btn, .checking-form .container-sm .row .col .form-outer form .submit-btn, .checking-form .container-md .row .col .form-outer form .submit-btn, .checking-form .container-lg .row .col .form-outer form .submit-btn, .checking-form .container-xl .row .col .form-outer form .submit-btn {
-    align-items: end;
+    align-items: flex-end;
     display: flex;
   }
   .checking-form .container-fluid .row .col .form-outer form .submit-btn button, .checking-form .container-sm .row .col .form-outer form .submit-btn button, .checking-form .container-md .row .col .form-outer form .submit-btn button, .checking-form .container-lg .row .col .form-outer form .submit-btn button, .checking-form .container-xl .row .col .form-outer form .submit-btn button {
     background: #B1D3CA;
     border-radius: 16px;
     color: #fff;
-    padding: 22px;
+    padding: 22px 55px;
     font-family: "POP";
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 140%;
     text-align: center;
+    max-width: 198px;
+  }
+  .select-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "DM-S";
+  }
+  .select-box__current {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+  }
+  .select-box__current:focus + .select-box__list {
+    opacity: 1;
+    animation-name: none;
+  }
+  .select-box__current:focus + .select-box__list .select-box__option {
+    cursor: pointer;
+  }
+  .select-box__current:focus .select-box__icon {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  .select-box__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+    padding: 15px 12px;
+    background-color: #fff;
+    font-size: 20px;
+    opacity: 1;
+    border-radius: 8px;
+    width: auto;
+  }
+  .select-box__value {
+    display: flex;
+  }
+  .select-box__input {
+    display: none;
+  }
+  .select-box__input:checked + .select-box__input-text {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(228, 228, 228, 0.3);
+    mix-blend-mode: normal;
+    border-radius: 12px;
+    height: 67px;
+    font-family: "DM-S";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.03em;
+    color: #D6D6D6;
+  }
+  .select-box__input:checked {
+    color: #364859 !important;
+  }
+  .select-box__input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: #fff;
+  }
+  .select-box__list {
+    position: absolute;
+    width: 100%;
+    padding: 10px;
+    list-style: none;
+    opacity: 0;
+    animation-name: HideList;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: step-start;
+    background-color: #fff;
+    width: 90%;
+    right: 0;
+    z-index: 999;
+  }
+  body .select-box__option {
+    display: block;
+    font-family: "POP";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 21px;
+    color: #B3B9C2;
+    margin: 0 !important;
+    padding: 9px;
+  }
+  .select-box__option:hover, .select-box__option:focus {
+    background: #F7F7F7;
+    color: #364859;
+    mix-blend-mode: normal;
+    border-radius: 8px;
+  }
+  .select-box__list::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    top: -5px;
+    right: 30px;
+    transform: rotate(136deg);
+  }
+  @keyframes HideList {
+    from {
+      transform: scaleY(1);
+    }
+    to {
+      transform: scaleY(0);
+    }
+  }
+  .processing {
+    padding: 120px 0px 74px;
+  }
+  .processing .container-fluid .row .col .left, .processing .container-sm .row .col .left, .processing .container-md .row .col .left, .processing .container-lg .row .col .left, .processing .container-xl .row .col .left {
+    width: 100%;
+    max-width: 469px;
+  }
+  .processing .container-fluid .row .col .left ul, .processing .container-sm .row .col .left ul, .processing .container-md .row .col .left ul, .processing .container-lg .row .col .left ul, .processing .container-xl .row .col .left ul {
+    list-style: none;
+    padding: 0;
+  }
+  .processing .container-fluid .row .col .left ul li, .processing .container-sm .row .col .left ul li, .processing .container-md .row .col .left ul li, .processing .container-lg .row .col .left ul li, .processing .container-xl .row .col .left ul li {
+    background: #F4F5F6;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: "DM-S";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #23262F;
+    position: relative;
+  }
+  .processing .container-fluid .row .col .left ul li img, .processing .container-sm .row .col .left ul li img, .processing .container-md .row .col .left ul li img, .processing .container-lg .row .col .left ul li img, .processing .container-xl .row .col .left ul li img {
+    width: auto;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+  .processing .container-fluid .row .col .left ul li span, .processing .container-sm .row .col .left ul li span, .processing .container-md .row .col .left ul li span, .processing .container-lg .row .col .left ul li span, .processing .container-xl .row .col .left ul li span {
+    width: 35px;
+    height: 35px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "DM-S";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-right: 20px;
+  }
+  .processing .container-fluid .row .col .left ul li span.one, .processing .container-sm .row .col .left ul li span.one, .processing .container-md .row .col .left ul li span.one, .processing .container-lg .row .col .left ul li span.one, .processing .container-xl .row .col .left ul li span.one {
+    background: #45B36B;
+  }
+  .processing .container-fluid .row .col .left ul li span.two, .processing .container-sm .row .col .left ul li span.two, .processing .container-md .row .col .left ul li span.two, .processing .container-lg .row .col .left ul li span.two, .processing .container-xl .row .col .left ul li span.two {
+    background: #9757D7;
+  }
+  .processing .container-fluid .row .col .left ul li span.three, .processing .container-sm .row .col .left ul li span.three, .processing .container-md .row .col .left ul li span.three, .processing .container-lg .row .col .left ul li span.three, .processing .container-xl .row .col .left ul li span.three {
+    background: #3772FF;
+  }
+  .processing .container-fluid .row .col .right, .processing .container-sm .row .col .right, .processing .container-md .row .col .right, .processing .container-lg .row .col .right, .processing .container-xl .row .col .right {
+    width: 100%;
+    max-width: 540px;
+    border-radius: 40px;
+    overflow: hidden;
   }
 }
 
@@ -15978,11 +16171,24 @@ button.swiper-pagination-bullet {
     bottom: -20%;
     right: 0%;
   }
-  .shipping-feature .container-fluid .row .col .left-part .turnround .turn p, .shipping-feature .container-sm .row .col .left-part .turnround .turn p, .shipping-feature .container-md .row .col .left-part .turnround .turn p, .shipping-feature .container-lg .row .col .left-part .turnround .turn p, .shipping-feature .container-xl .row .col .left-part .turnround .turn p {
+  main .shipping-feature .container-fluid .row .col .left-part .turnround .turn p, main .shipping-feature .container-sm .row .col .left-part .turnround .turn p, main .shipping-feature .container-md .row .col .left-part .turnround .turn p, main .shipping-feature .container-lg .row .col .left-part .turnround .turn p, main .shipping-feature .container-xl .row .col .left-part .turnround .turn p {
     font-size: 18px;
   }
-  .shipping-feature .container-fluid .row .col .right-part p, .shipping-feature .container-sm .row .col .right-part p, .shipping-feature .container-md .row .col .right-part p, .shipping-feature .container-lg .row .col .right-part p, .shipping-feature .container-xl .row .col .right-part p {
+  main .shipping-feature .container-fluid .row .col .right-part p, main .shipping-feature .container-sm .row .col .right-part p, main .shipping-feature .container-md .row .col .right-part p, main .shipping-feature .container-lg .row .col .right-part p, main .shipping-feature .container-xl .row .col .right-part p {
     font-size: 16px;
+  }
+  main .processing {
+    padding: 120px 0px 74px;
+  }
+  main .processing .container-fluid .row .col .left ul li, main .processing .container-sm .row .col .left ul li, main .processing .container-md .row .col .left ul li, main .processing .container-lg .row .col .left ul li, main .processing .container-xl .row .col .left ul li {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  main .processing .container-fluid .row .col .left ul li span, main .processing .container-sm .row .col .left ul li span, main .processing .container-md .row .col .left ul li span, main .processing .container-lg .row .col .left ul li span, main .processing .container-xl .row .col .left ul li span {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
@@ -16018,6 +16224,19 @@ button.swiper-pagination-bullet {
   main .home-banner .cartoon-4 {
     bottom: -20%;
     right: 0%;
+  }
+  main .processing {
+    padding: 120px 0px 74px;
+  }
+  main .processing .container-fluid .row .col .left ul li, main .processing .container-sm .row .col .left ul li, main .processing .container-md .row .col .left ul li, main .processing .container-lg .row .col .left ul li, main .processing .container-xl .row .col .left ul li {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  main .processing .container-fluid .row .col .left ul li span, main .processing .container-sm .row .col .left ul li span, main .processing .container-md .row .col .left ul li span, main .processing .container-lg .row .col .left ul li span, main .processing .container-xl .row .col .left ul li span {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 /*# sourceMappingURL=packing-pigeon.css.map */

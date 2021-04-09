@@ -87,21 +87,145 @@
               <div class="row">
                   <div class="col col-12">
                     <div class="form-outer">
-                        <form class="d-block d-md-inline-flex">
-                          
+                        <form class="d-block d-md-inline-flex"> 
                           <div class="form-group size">
                             <label for="size">Size</label>
-                            <select class="browser-default custom-select form-control" id="size" name="size">
-                                <option selected>Enter your size</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                              </select>
-                          </div>
+                            <div class="select-box">
+                              <div class="select-box__current" tabindex="1">
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="size" value="1" name="size" checked="checked"/>
+                                  <p class="select-box__input-text">Enter your size</p>
+                                </div>
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="size0" value="1" name="size">
+                                  <p class="select-box__input-text">2" x 2"</p>
+                                </div>
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="size1" value="1" name="size"/>
+                                  <p class="select-box__input-text">3" x 3"</p>
+                                </div>
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="size2" value="2" name="size"/>
+                                  <p class="select-box__input-text">4" x 4"</p>
+                                </div>
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="size3" value="3" name="size"/>
+                                  <p class="select-box__input-text">5" x 5"</p>
+                                </div>
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="size4" value="4" name="size"/>
+                                  <p class="select-box__input-text">Custom size</p>
+                                </div>
+                                <div class="ic-arrow">
+                                  <img class="select-box__icon" src="./assets/img/select.png" alt="Arrow Icon" aria-hidden="true"/>
+                                </div>
+                              </div>
+                              <ul class="select-box__list">
+                                <li>
+                                  <label class="select-box__option" for="size0" aria-hidden="aria-hidden">2" x 2"</label>
+                                </li>
+                                <li>
+                                  <label class="select-box__option" for="size1" aria-hidden="aria-hidden">3" x 3"</label>
+                                </li>
+                                <li>
+                                  <label class="select-box__option" for="size2" aria-hidden="aria-hidden">4" x 4"</label>
+                                </li>
+                                <li>
+                                  <label class="select-box__option" for="size3" aria-hidden="aria-hidden">5" x 5"</label>
+                                </li>
+                                <li>
+                                  <label class="select-box__option" for="size4" aria-hidden="aria-hidden">Custom size</label>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>  
+                         
                           <div class="form-group quantity">
-                              <label for="quantity">Quantity</label>
-                              <input type="text" id="quantity" class="form-control" name="quantity" placeholder="Enter your quantity">
-                          </div>
+                            <label for="size">Quantity</label>
+                            <div class="select-box">
+                              <div class="select-box__current" tabindex="2">
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="quantity" value="1" name="quantity" checked="checked"/>
+                                  <p class="select-box__input-text">Enter your quantity</p>
+                                </div>
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="quantity0" value="2" name="quantity">
+                                  <p class="select-box__input-text">50</p>
+                                </div>
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="quantity1" value="3" name="quantity"/>
+                                  <p class="select-box__input-text">100</p>
+                                </div>
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="quantity2" value="4" name="quantity"/>
+                                  <p class="select-box__input-text">200</p>
+                                </div>
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="quantity3" value="5" name="quantity"/>
+                                  <p class="select-box__input-text">300</p>
+                                </div>
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="quantity4" value="6" name="quantity"/>
+                                  <p class="select-box__input-text">500</p>
+                                </div>
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="quantity5" value="7" name="quantity"/>
+                                  <p class="select-box__input-text">1000</p>
+                                </div>
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="quantity6" value="8" name="quantity"/>
+                                  <p class="select-box__input-text">2000</p>
+                                </div>
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="quantity7" value="9" name="quantity"/>
+                                  <p class="select-box__input-text">5000</p>
+                                </div>
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="quantity8" value="10" name="quantity"/>
+                                  <p class="select-box__input-text">10000</p>
+                                </div>
+                                <div class="select-box__value">
+                                  <input class="select-box__input" type="radio" id="quantity9" value="11" name="quantity"/>
+                                  <p class="select-box__input-text">Custom quantity</p>
+                                </div>
+                                <div class="ic-arrow">
+                                  <img class="select-box__icon" src="./assets/img/select.png" alt="Arrow Icon" aria-hidden="true"/>
+                                </div>
+                              </div>
+                              <ul class="select-box__list">
+                                <li>
+                                  <label class="select-box__option" for="quantity0" aria-hidden="aria-hidden">50</label>
+                                </li>
+                                <li>
+                                  <label class="select-box__option" for="quantity1" aria-hidden="aria-hidden">100</label>
+                                </li>
+                                <li>
+                                  <label class="select-box__option" for="quantity2" aria-hidden="aria-hidden">200</label>
+                                </li>
+                                <li>
+                                  <label class="select-box__option" for="quantity3" aria-hidden="aria-hidden">300</label>
+                                </li>
+                                <li>
+                                  <label class="select-box__option" for="quantity4" aria-hidden="aria-hidden">500</label>
+                                </li>
+                                <li>
+                                  <label class="select-box__option" for="quantity5" aria-hidden="aria-hidden">1000</label>
+                                </li>
+                                <li>
+                                  <label class="select-box__option" for="quantity6" aria-hidden="aria-hidden">2000</label>
+                                </li>
+                                <li>
+                                  <label class="select-box__option" for="quantity7" aria-hidden="aria-hidden">5000</label>
+                                </li>
+                                <li>
+                                  <label class="select-box__option" for="quantity8" aria-hidden="aria-hidden">10000</label>
+                                </li>
+                                <li>
+                                  <label class="select-box__option" for="quantity9" aria-hidden="aria-hidden">Custom quantity</label>
+                                </li>
+                              </ul>
+                            </div>
+                          </div> 
                           <div class="form-group price">
                               <label for="price">Price</label>
                               <input type="text" id="price" class="form-control" name="price">
@@ -120,6 +244,39 @@
                   
               </div>
           </div>
+      </section>
+      <section class="processing">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col col-12 col-md-6">
+              <div class="left">
+                <ul>
+                  <li><span class="one">1</span>Free shipping with in Canada <img
+                src="./assets/img/vector.png"
+                alt="vector"
+              /></li>
+                  <li><span class="two">2</span>Free Online Proofs <img
+                src="./assets/img/vector.png"
+                alt="vector"
+              /></li>
+                  <li><span class="three">3</span>Fast turn around <img
+                src="./assets/img/vector.png"
+                alt="vector"
+              /></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col col-12 col-md-6">
+              <div class="right">
+                <img
+                src="./assets/img/process.jpg"
+                alt="Sticker 1"
+                class="img-fluid"
+              />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="durable-stickers">
         <div class="container-fluid">
